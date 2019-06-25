@@ -1,5 +1,7 @@
 package algorithm;
 
+import java.util.*;
+
 /**
  * @Descript:
  * @Author: zhouwei
@@ -8,9 +10,15 @@ package algorithm;
  */
 public class LeetCode {
 
+    public static void main(String[] args) {
+        int len = lengthOfLongestSubstring("abcabcbbc");
+        System.out.println(len);
+    }
+
     static class ListNode {
         int val;
         ListNode next;
+
         ListNode(int val) {
             this.val = val;
         }
@@ -18,6 +26,7 @@ public class LeetCode {
 
     /**
      * LeetCode2：两数相加
+     *
      * @param l1
      * @param l2
      * @return
@@ -36,8 +45,8 @@ public class LeetCode {
                 sum += l2.val;
                 l2 = l2.next;
             }
-            carry = sum/10;
-            sum = sum%10;
+            carry = sum / 10;
+            sum = sum % 10;
             cur.next = new ListNode(sum);
             cur = cur.next;
         }
@@ -47,6 +56,30 @@ public class LeetCode {
         return head.next;
     }
 
+    /**
+     * LeetCode3:无重复字符的最长子串
+     *
+     * @param s
+     * @return
+     */
+    public static int lengthOfLongestSubstring(String s) {
+        int length = 0;
+        int i = 0, j = 0;
+        Set<Character> set = new HashSet<>();
+        while (i < s.length() && j < s.length()) {
+            if (!set.contains(s.charAt(j))) {
+                set.add(s.charAt(j++));
+                length = Math.max(length, j-i);
+            } else {
+                set.remove(s.charAt(i++));
+            }
+        }
+        return length;
+    }
 
 
 }
+
+
+
+
