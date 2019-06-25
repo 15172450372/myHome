@@ -1,5 +1,6 @@
 package algorithm;
 
+
 /**
  * @Descript: 排序
  * @Author: zhouwei
@@ -13,9 +14,8 @@ public class Sort {
         //bubbleSort(arr);
         //quickSort(arr,0,arr.length-1);
         //insertSort(arr);
-        //int[] ints = mergeSort(arr, 0,arr.length - 1);
-        //print(ints);
-
+        int[] ints = mergeSort(arr, 0,arr.length - 1);
+        print(ints);
     }
 
     /**
