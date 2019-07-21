@@ -1,6 +1,7 @@
 package algorithm;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @Descript:
@@ -11,14 +12,15 @@ import java.util.*;
 public class LeetCode {
 
     public static void main(String[] args) {
-        int len = lengthOfLongestSubstring("abcabcbbc");
-        System.out.println(len);
+        String s = "abbacdeedc";
+        //int len = lengthOfLongestSubstring(s);
+        String s1 = longestPalindrome(s);
+        System.out.println(s1);
     }
 
     static class ListNode {
         int val;
         ListNode next;
-
         ListNode(int val) {
             this.val = val;
         }
@@ -76,6 +78,36 @@ public class LeetCode {
         }
         return length;
     }
+
+    /**
+     * LeetCode5: 最长回文子串
+     * @param s
+     * @return
+     */
+    public static String longestPalindrome(String s) {
+        int len = s.length();                  //字符串长度
+        int maxlen = 1;                      //最长回文字符串长度
+        int start = 0;                       //最长回文字符串起始地址
+        for(int i = 0; i < len; i++)         //起始地址
+        {
+            for(int j = i + 1; j < len; j++) //结束地址
+            {
+                int tmp1 = i, tmp2 = j;
+                //判断是不是回文
+                while(tmp1 < tmp2 && s.charAt(tmp1) == s.charAt(tmp2)){
+                    tmp1++;
+                    tmp2--;
+                }
+                if(tmp1 <= tmp2 && j - i + 1 > maxlen) {
+                    maxlen = j - i + 1;
+                    start = i;
+                }
+            }
+        }
+        return s.substring(start, maxlen);
+    }
+
+
 
 
 }
