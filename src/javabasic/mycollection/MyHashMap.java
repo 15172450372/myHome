@@ -91,6 +91,7 @@ public class MyHashMap<K,V> {
             while (node != null) {
                 if (node.key.equals(key)) {
                     value = node.value;
+                    break;
                 } else {
                     node = node.next;
                 }
