@@ -62,7 +62,7 @@ public class Main {
     /**
      * 获取类的方法
      * getMethods返回的是申明为public的方法，包括父类中定义，
-     * getDeclaredFields返回的是指定类定义的所有定义的方法，不包括父类的。
+     * getDeclaredMethods返回的是指定类定义的所有定义的方法，不包括父类的。
      */
     static void getMethod() {
         Class<ReflectDemo> classType = ReflectDemo.class;

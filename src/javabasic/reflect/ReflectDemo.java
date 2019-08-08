@@ -9,13 +9,9 @@ package javabasic.reflect;
 public class ReflectDemo {
 
     public int id;
-
     private String name;
-
     private int age;
-
     public String tell;
-
     public String email;
 
     public ReflectDemo() {

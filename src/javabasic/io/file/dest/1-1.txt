@@ -1,0 +1,20 @@
+�口即可，无须实现任何方法。
+
+一旦某个类实现了 Serializable 接口，该类的对象就是可序列化的，程序可以通过如下两个步骤来序列化该对象。
+1.创建一个 ObjectOutputStream，这个输出流是一个处理流，所以必须建立在其他节点流的基础上。如下代码所示。
+
+//创建 ObjectOutputStream 输出流
+ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("file.txt))；
+1
+2
+2.调用 ObjectOutputStream 对象的writeObject()方法输出可序列化对象。如下代码所示。
+
+//将一个对象输出到输出流中
+oos.writeObject(text);
+1
+2
+如果希望从二进制流中恢复 Java对象，则需要使用反序列化。反序列化的步骤如下.
+1.创建一个 ObjectInputStream 输入流，这个输入流是一个处理流，所以必须建立在其他节点流的基础之上。如下代码所示。
+
+//创建一个ObjectInputStream()输入流
+ObjectInputStream ois = new ObjectInputStream(new FileInputstr
