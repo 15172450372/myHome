@@ -42,7 +42,7 @@ public class SplitFile {
     }
 
     /**
-     * 分割
+     * 切割
      */
     public void split() throws IOException {
         //计算起始位置及大小
@@ -84,10 +84,10 @@ public class SplitFile {
         int len = -1;
         while ((len=raf.read(buff)) != -1) {
             if (actualSize > len) {
-                raf1.write(buff);
+                raf1.write(buff,0,len);
                 actualSize -= len;
             } else {
-                raf1.write(buff);
+                raf1.write(buff,0,actualSize);
                 break;
             }
         }
@@ -121,12 +121,12 @@ public class SplitFile {
     }
 
     public static void main(String[] args) throws IOException {
-        String srcPath = "src/javabasic/io/file/1.txt";
+        String srcPath = "src/javabasic/io/file/1.jpg";
         String destDir = "src/javabasic/io/file/dest";
         SplitFile splitFile = new SplitFile(srcPath,destDir,1024);
         splitFile.split();
 
-        splitFile.mergeFile("src/javabasic/io/file/aaa.txt");
+        splitFile.mergeFile("src/javabasic/io/file/aaa.jpg");
     }
 
 }

@@ -1,12 +1,11 @@
 package javabasic.socket.udp;
 
-import javabasic.util.FileUtils;
-import sun.security.krb5.internal.PAData;
+import org.apache.commons.io.FileUtils;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.net.*;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetSocketAddress;
 
 /**
  * @Author: zhouwei
@@ -23,12 +22,10 @@ public class UdpClient {
         DatagramSocket client = new DatagramSocket(9999);
 
         //准备数据
-        //String data = "啦啦啦啦";
-        //byte[] bytes = data.getBytes();
-        String path = "C:/Users/13701/Pictures/Saved Pictures/1.jpg";
-        byte[] bytes = FileUtils.File2byte(path);
+        String path = "src/javabasic/socket/udp/1.jpg";
+        byte[] bytes = FileUtils.readFileToByteArray(new File(path));
 
-        //构建数据包
+        //构建数据包,UDP通过数据包进行数据传输
         InetSocketAddress inetSocketAddress = new InetSocketAddress("localhost", 8888);
         DatagramPacket datagramPacket = new DatagramPacket(bytes, 0, bytes.length, inetSocketAddress);
 

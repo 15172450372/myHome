@@ -1,13 +1,11 @@
 package javabasic.socket.udp;
 
-import com.sun.javafx.binding.StringFormatter;
-import javabasic.util.FileUtils;
+import org.apache.commons.io.FileUtils;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
-import java.net.SocketException;
-import java.util.Arrays;
 
 /**
  * @Author: zhouwei
@@ -24,7 +22,7 @@ public class UdpServer {
         DatagramSocket server = new DatagramSocket(8888);
 
         //准备容器接受数据
-        byte[] container = new byte[1024];
+        byte[] container = new byte[1024*10];
         DatagramPacket datagramPacket = new DatagramPacket(container, 0, container.length);
 
         //接收数据(阻塞)
@@ -32,8 +30,7 @@ public class UdpServer {
 
         //解析数据
         byte[] data = datagramPacket.getData();
-        FileUtils.byte2File(data,"C:/Users/13701/Pictures/Saved Pictures","copy.jpg");
-        //System.out.println(new String(data,0,data.length));
+        FileUtils.writeByteArrayToFile(new File("src/javabasic/socket/udp/2.jpg"),data);
 
         //释放资源
         server.close();

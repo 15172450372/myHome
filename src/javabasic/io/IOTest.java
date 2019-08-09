@@ -24,7 +24,7 @@ public class IOTest {
         //readFile(srcPath);
         //readFileWithBuff(srcPath);
         //writeFile(destPath);
-        copyFile("src/javabasic/io/1.txt","src/javabasic/io/file/2.txt");
+        //copyFile("src/javabasic/io/1.txt","src/javabasic/io/file/2.txt");
         //copyFile("src/javabasic/io/1.jpg","src/javabasic/io/file/copy.jpg");
 
         //-----字符流
@@ -38,12 +38,12 @@ public class IOTest {
         //byteArray2File(bytes,"src/javabasic/io/file/2.jpg");
 
         //convert();
-        //convert2();
+        convert2();
         //dataStreamTest();
         //objectStreamTest();
         //objectWriteAndRead();
 
-        printStreamTest();
+        //printStreamTest();
     }
 
     /**
@@ -65,7 +65,7 @@ public class IOTest {
         System.out.println(string2);
 
         //乱码1：字节数不一
-        String string3 = new String(bytes, 0, bytes.length - 2, "utf-8");
+        String string3 = new String(bytes, 0, bytes.length - 2, StandardCharsets.UTF_8);
         System.out.println(string3);
     }
 
