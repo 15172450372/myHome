@@ -1,7 +1,6 @@
-package javabasic.socket.tcp;
+package javabasic.socket.tcp.chat02;
 
 
-import java.io.Closeable;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -10,7 +9,7 @@ import java.net.Socket;
 
 /**
  * @Author: zhouwei
- * @Description:
+ * @Description: 多人单聊
  * @Date: 2019/8/9 17:50
  * @Version: 1.0
  **/
@@ -27,6 +26,7 @@ public class MultiChatServer {
             System.out.println("连接到一个客户端");
 
             new Thread(()->{
+
                 DataInputStream dis = null;
                 DataOutputStream dos = null;
                 try {

@@ -1,31 +1,18 @@
-package javabasic.socket.tcp.encap;
+package javabasic.socket.tcp.chat04;
 
 import java.io.Closeable;
 import java.io.IOException;
 
 /**
  * @Author: zhouwei
- * @Description: 一个客户端对应一个Channel
- * @Date: 2019/8/9 20:23
+ * @Description:
+ * @Date: 2019/8/15 17:43
  * @Version: 1.0
  **/
-public class Channel {
-
-    /**
-     * 接收消息
-     * @return
-     */
-    public String readMsg() {
-        return null;
-    }
-
-    //发送消息
-    public void sendMsg(String msg) {
-
-    }
+public class ReleaseUtil {
 
     //释放资源
-    public void release(Closeable... targets) {
+    public static void release(Closeable... targets) {
         for (Closeable target:targets) {
             try {
                 if (target != null) {

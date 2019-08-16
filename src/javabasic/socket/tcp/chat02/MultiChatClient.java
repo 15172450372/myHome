@@ -1,15 +1,15 @@
-package javabasic.socket.tcp;
+package javabasic.socket.tcp.chat02;
 
 import java.io.*;
 import java.net.Socket;
 
 /**
  * @Author: zhouwei
- * @Description: 单人聊天室 Client
- * @Date: 2019/8/9 16:54
+ * @Description:
+ * @Date: 2019/8/9 17:50
  * @Version: 1.0
  **/
-public class SingleChatClient {
+public class MultiChatClient {
 
     public static void main(String[] args) throws IOException {
 
@@ -17,9 +17,9 @@ public class SingleChatClient {
 
         Socket socket = new Socket("127.0.0.1",8888);
 
-        DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         DataInputStream dis = new DataInputStream(socket.getInputStream());
+        DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
         while (true) {
             //发送消息
             String msg = br.readLine();
@@ -34,10 +34,10 @@ public class SingleChatClient {
                 break;
             }
         }
+
         br.close();
         dos.close();
         socket.close();
-
     }
 
 }

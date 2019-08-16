@@ -1,4 +1,4 @@
-package javabasic.socket.tcp;
+package javabasic.socket.tcp.chat01;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -6,7 +6,7 @@ import java.net.Socket;
 
 /**
  * @Author: zhouwei
- * @Description: 单人聊天室 Server
+ * @Description: 单聊
  * @Date: 2019/8/9 16:54
  * @Version: 1.0
  **/

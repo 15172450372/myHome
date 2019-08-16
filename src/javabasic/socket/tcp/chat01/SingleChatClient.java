@@ -1,15 +1,15 @@
-package javabasic.socket.tcp;
+package javabasic.socket.tcp.chat01;
 
 import java.io.*;
 import java.net.Socket;
 
 /**
  * @Author: zhouwei
- * @Description:
- * @Date: 2019/8/9 17:50
+ * @Description: 单人聊天室 Client
+ * @Date: 2019/8/9 16:54
  * @Version: 1.0
  **/
-public class MultiChatClient {
+public class SingleChatClient {
 
     public static void main(String[] args) throws IOException {
 
@@ -34,10 +34,10 @@ public class MultiChatClient {
                 break;
             }
         }
-
         br.close();
         dos.close();
         socket.close();
+
     }
 
 }
