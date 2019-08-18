@@ -7,15 +7,16 @@ import java.lang.reflect.Method;
 
 /**
  * @Author: zhouwei
- * @Description: java反射测试
+ * @Description: java反射
  * @Date: 2019/7/17 15:46
  * @Version: 1.0
  **/
 public class Main {
 
     public static void main(String[] args) throws Exception  {
+        //getClazz();
+        //getMethod();
         setUpOrgetField();
-
     }
 
     /**

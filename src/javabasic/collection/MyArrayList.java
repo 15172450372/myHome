@@ -97,7 +97,7 @@ public class MyArrayList<E> {
 
     @Override
     public String toString() {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         sb.append("[");
         for (Object o : elementData) {
             sb.append(0).append(",");
@@ -107,7 +107,7 @@ public class MyArrayList<E> {
     }
 
     public static void main(String[] args) {
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<Integer> myArrayList = new MyArrayList<>();
         myArrayList.add(1);
         myArrayList.add(2);
         myArrayList.add(3);

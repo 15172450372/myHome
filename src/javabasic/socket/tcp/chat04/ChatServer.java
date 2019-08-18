@@ -10,6 +10,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import static javabasic.socket.tcp.chat04.KeyWord.AT;
 import static javabasic.socket.tcp.chat04.KeyWord.EXIT;
 
 /**
@@ -127,8 +128,8 @@ public class ChatServer {
                 release(dis,dos);
                 isRunning = false;
             }
-            if (!msg.equals("")) {
-                if (msg.startsWith("@")) {
+            if (!msg.isEmpty()) {
+                if (msg.startsWith(AT)) {
                     //私聊
                     int index = msg.indexOf(":");
                     String name = msg.substring(1,index);

@@ -15,7 +15,7 @@ public class IOTest {
 
     public static void main(String[] args) throws Exception {
 
-        //String path = "C:/Users/13701/IdeaProjects/myHome/src/javabasic/io/file/1.txt";
+        String path = "C:/Users/13701/IdeaProjects/myHome/src/javabasic/io/file/1.txt";
         String srcPath = "src/javabasic/io/file/1.txt";
         String destPath = "src/javabasic/io/file/dest.txt";
 
@@ -194,8 +194,9 @@ public class IOTest {
             outputStream = new FileOutputStream(destFile);
             //3.操作流
             byte[] bytes = new byte[64];
-            while (inputStream.read(bytes) != -1) {
-                outputStream.write(bytes);
+            int len = -1;
+            while ((len=inputStream.read(bytes)) != -1) {
+                outputStream.write(bytes,0,len);
                 outputStream.flush();
             }
         } catch (IOException e) {
@@ -318,12 +319,11 @@ public class IOTest {
      * 图片->字节数组
      * 1>图片到程序：FileInputStream
      * 2>程序到字节数组：ByteArrayOutputStream
-     * @param filePath
+     * @param path
      * @return
      */
-    public static byte[] file2ByteArray(String filePath) {
+    public static byte[] file2ByteArray(String path) {
         //1.确定数据源
-        String path = "src/javabasic/io/1.jpg";
         File file = new File(path);
         InputStream inputStream = null;
         ByteArrayOutputStream baos;
@@ -333,9 +333,9 @@ public class IOTest {
             baos = new ByteArrayOutputStream();
             //3.操作数据
             byte[] buff = new byte[1024];
-            int len = -1; //接收长度
+            int len = -1;
             while ((len = inputStream.read(buff)) != -1) {
-                baos.write(buff,0,len);  //写到字节数组
+                baos.write(buff,0,len);
             }
             baos.flush();
             return baos.toByteArray();
