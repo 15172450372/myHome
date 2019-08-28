@@ -13,13 +13,16 @@ public class BubbleSort {
      * @param arr
      */
     public static void sort(Comparable[] arr) {
-        for (int i=0; i<arr.length - 1; i++) {
-            for (int j=0; j<arr.length-1-i; j++) {
+        int length = arr.length;
+        for (int i=0; i<length-1; i++) {
+            for (int j=0; j<length-i-1; j++) {
                 if (arr[j].compareTo(arr[j+1]) > 0) {
                     SortHelper.swap(arr, j, j+1);
                 }
             }
         }
     }
+
+
 
 }

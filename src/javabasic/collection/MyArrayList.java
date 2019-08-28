@@ -113,7 +113,7 @@ public class MyArrayList<E> {
         myArrayList.add(3);
         myArrayList.add(4);
         myArrayList.add(5);
-        myArrayList.remove(new Integer(5));
+        myArrayList.remove(3);
     }
 
 }

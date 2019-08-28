@@ -1,7 +1,7 @@
 package pattern.decoratorPattern;
 
 /**
- * @Descript: 适配器模式
+ * @Descript: 装饰器模式
  * @Author: zhouwei
  * @Date: 19-6-17 下午5:43
  * @Version 1.0

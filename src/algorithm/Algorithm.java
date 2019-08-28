@@ -8,6 +8,10 @@ package algorithm;
  */
 public class Algorithm {
 
+    public static void main(String[] args) {
+
+    }
+
     /**
      * 斐波那契数列
      * @param n
@@ -22,6 +26,36 @@ public class Algorithm {
             return 1;
         } else {
             return feb(n-1) + feb(n-2);
+        }
+    }
+
+    /**
+     * 链表反转
+     * @param head 头节点
+     * @return
+     */
+    private static Node reverse(Node head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        Node p = head;
+        Node q = head.next;
+        head.next = null;
+        Node r;
+        while (q != null) {
+            r = q.next;
+            q.next = p;
+            p = q;
+            q = r;
+        }
+        return p;
+    }
+
+    static class Node {
+        int value;
+        Node next;
+        public Node(int value) {
+            this.value = value;
         }
     }
 

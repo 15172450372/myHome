@@ -8,15 +8,8 @@ package algorithm.sort;
  **/
 public class QuickSort {
 
-    public static void main(String[] args) {
-        Integer[] integers = SortHelper.generateRandomArray(100, 1, 500);
-        sort(integers);
-
-    }
-
     public static void sort(Comparable[] arr) {
-        int length = arr.length;
-        quick(arr, 0, length-1);
+        quick(arr, 0, arr.length-1);
     }
 
     public static void quick(Comparable[] arr, int l, int r) {
@@ -38,8 +31,9 @@ public class QuickSort {
         //Random random = new Random();
         //int index = random.nextInt(l + (r - l) / 2);
         //Comparable e = arr[index];
+
         Comparable e = arr[l];
-        int j = l;
+        int j = l;  //表示最右一位小于中间值的下标
         for (int i=j+1; i<=r; i++) {
             if (arr[i].compareTo(e) < 0) {
                 j++;
@@ -48,6 +42,7 @@ public class QuickSort {
         }
         SortHelper.swap(arr, l, j);
         return j;
+
     }
 
 }

@@ -6,6 +6,7 @@ import java.io.Closeable;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -80,7 +81,10 @@ public class ChatServer {
         //发送消息
         public void sendMsg(String msg) {
             try {
-                dos.writeUTF(msg);
+                InetAddress address = this.getSocket().getInetAddress();
+                String hostName = address.getHostName();
+                int port = this.getSocket().getPort();
+                dos.writeUTF(hostName + port + ":" + msg);
                 dos.flush();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -97,7 +101,8 @@ public class ChatServer {
                 if (isSystemMsg) {
                     other.sendMsg(msg);
                 } else {
-                    other.sendMsg(name + ": " + msg);
+                    //other.sendMsg(name + ": " + msg);
+                    other.sendMsg(msg);
                 }
             }
         }
@@ -107,7 +112,11 @@ public class ChatServer {
             this.isRunning = false;
             ReleaseUtil.release(targets);
             channels.remove(this);
-            sendOthersMsg(this.name + "退出了聊天室", true);
+            //sendOthersMsg(this.name + "退出了聊天室", true);
+            InetAddress address = this.getSocket().getInetAddress();
+            String hostName = address.getHostName();
+            int port = this.getSocket().getPort();
+            sendOthersMsg(hostName + ":" + port + "退出了聊天室", true);
         }
 
         @Override

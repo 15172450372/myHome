@@ -8,12 +8,6 @@ package algorithm.sort;
  **/
 public class MergeSort {
 
-    public static void main(String[] args) {
-        Integer[] arr = SortHelper.generateRandomArray(100, 1, 100);
-        mergeSortBU(arr);
-        SortHelper.printArr(arr);
-    }
-
     public static void sort(Comparable[] arr) {
         mergeSort(arr, 0, arr.length-1);
     }

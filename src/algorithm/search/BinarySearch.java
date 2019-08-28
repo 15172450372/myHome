@@ -12,23 +12,22 @@ import algorithm.sort.SortHelper;
 public class BinarySearch {
 
     public static void main(String[] args) {
-        int N = 10;
+        int N = 100;
         Integer[] arr = SortHelper.generateRandomArray(N, 0, 100);
         QuickSort.sort(arr);
-        int index = search(arr, N, arr[5]);
+        int index = search(arr, arr[5]);
         System.out.println(arr[index]);
     }
 
     /**
      * 二分查找
      * @param arr
-     * @param n
      * @param target
      * @return
      */
-    public static int search(Comparable[] arr, int n, Comparable target) {
+    public static int search(Comparable[] arr, Comparable target) {
         int low = 0;
-        int high = n-1;
+        int high = arr.length - 1;
         while (low <= high) {
             int middle = (low+high)/2;
             if (arr[middle].compareTo(target) == 0) {

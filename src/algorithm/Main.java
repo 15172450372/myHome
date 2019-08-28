@@ -1,14 +1,17 @@
-package pattern;
+package algorithm;
 
 /**
- * @Descript:
  * @Author: zhouwei
- * @Date: 19-6-16 上午10:19
- * @Version 1.0
- */
+ * @Description:
+ * @Date: 2019/8/20 19:37
+ * @Version: 1.0
+ **/
 public class Main {
 
     public static void main(String[] args) {
 
+
     }
+
 }
+

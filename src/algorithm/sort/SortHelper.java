@@ -12,12 +12,12 @@ import java.util.Random;
 public class SortHelper {
 
     public static void main(String[] args) {
-        int N = 10;
-        Integer[] arr = SortHelper.generateRandomArray(N, 0, 1000);
+        int N = 10000;
+        Integer[] arr = SortHelper.generateRandomArray(N, 0, 10000);
+        //SortHelper.testSort("algorithm.sort.BubbleSort", arr);
         //SortHelper.testSort("algorithm.sort.SelectionSort", arr);
         //SortHelper.testSort("algorithm.sort.InsertSort", arr);
-        //SortHelper.testSort("algorithm.sort.BubbleSort", arr);
-        //SortHelper.testSort("algorithm.sort.ShellSort", arr);
+        SortHelper.testSort("algorithm.sort.ShellSort", arr);
         //SortHelper.testSort("algorithm.sort.MergeSort", arr);
         //SortHelper.testSort("algorithm.sort.QuickSort", arr);
 

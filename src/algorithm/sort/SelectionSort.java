@@ -8,39 +8,6 @@ package algorithm.sort;
  **/
 public class SelectionSort {
 
-    public static void main(String[] args) {
-        // 测试Integer
-        //Integer[] a = {10,9,8,7,6,5,4,3,2,1};
-        //SelectionSort.sort(a);
-        //SortHelper.printArr(a);
-        //System.out.println();
-        //// 测试Float
-        //Float[] b = {4.4f,3.3f,2.2f,1.1f};
-        //SelectionSort.sort(b);
-        //SortHelper.printArr(b);
-        //System.out.println();
-        ////测试String
-        //String[] c = {"A", "D", "B", "C"};
-        //SelectionSort.sort(c);
-        //SortHelper.printArr(c);
-        //System.out.println();
-        ////测试自定义类 Student
-        //Student[] d = new Student[4];
-        //d[0] = new Student("D",90);
-        //d[1] = new Student("C",100);
-        //d[2] = new Student("B",95);
-        //d[3] = new Student("A",95);
-        //SelectionSort.sort(d);
-        //SortHelper.printArr(d);
-        //System.out.println();
-        // 随机生成数组
-        //int n = 10000;
-        //Integer[] arr = SortHelper.createArr(n, 100, 5000);
-        //SelectionSort.sort(arr);
-        //SortHelper.printArr(arr);
-
-    }
-
     /**
      * 基本思想：
      * 在长度为N的无序数组中，第一次遍历n-1个数，找到最小的数值与第一个元素交换；
@@ -51,15 +18,15 @@ public class SelectionSort {
      */
     public static void sort(Comparable[] arr) {
         int length = arr.length;
-        for (int i=0; i<length; i++) {
+        for (int i=0; i<length-1; i++) {
             int minIndex = i;
-            for (int j=i+1; j<length; j++) {
-                if (arr[j].compareTo(arr[minIndex]) < 0) {
+            for (int j=i+1; j<length-1; j++) {
+                if (arr[minIndex].compareTo(arr[j]) > 0) {
                     minIndex = j;
                 }
             }
-            if (i != minIndex) {
-                SortHelper.swap(arr, i, minIndex);
+            if (minIndex != i) {
+                SortHelper.swap(arr, minIndex, i);
             }
         }
     }

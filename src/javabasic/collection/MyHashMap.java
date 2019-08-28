@@ -1,6 +1,10 @@
 package javabasic.collection;
 
 
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
+
 /**
  * @Author: zhouwei
  * @Description: 手写HashMap
@@ -105,14 +109,18 @@ public class MyHashMap<K,V> {
     }
 
     public static void main(String[] args) {
-        MyHashMap<Integer, String> myHashMap = new MyHashMap<>();
-        myHashMap.put(1,"a");
-        myHashMap.put(2,"b");
-        myHashMap.put(3,"c");
-        myHashMap.put(3,"f");
-        System.out.println(myHashMap.size);
-        String s = myHashMap.get(2);
-        System.out.println(s);
+        //MyHashMap<Integer, String> myHashMap = new MyHashMap<>();
+        //myHashMap.put(1,"a");
+        //myHashMap.put(2,"b");
+        //myHashMap.put(3,"c");
+        //myHashMap.put(3,"f");
+        //System.out.println(myHashMap.size);
+        //String s = myHashMap.get(2);
+        //System.out.println(s);
+
+
+        ReentrantLock reentrantLock = new ReentrantLock();
+
     }
 
 }

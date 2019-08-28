@@ -9,7 +9,7 @@ package pattern.adapterPattern;
 public class Mp4Player implements AdvancedMediaPlayer {
 
     @Override
-    public void playVcl(String fileName) {
+    public void playVlc(String fileName) {
 
     }
 
