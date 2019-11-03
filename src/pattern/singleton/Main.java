@@ -9,23 +9,27 @@ package pattern.singleton;
 public class Main {
 
     public static void main(String[] args) {
-        SinglotonA instance = SinglotonA.getInstance();
-        SinglotonA instance1 = SinglotonA.getInstance();
+        SingletonA instance = SingletonA.getInstance();
+        SingletonA instance1 = SingletonA.getInstance();
         if (instance == instance1) {
             System.out.println("success");
         }
 
-        SinglotonB instance2 = SinglotonB.getInstance();
-        SinglotonB instance3 = SinglotonB.getInstance();
+        SingletonB instance2 = SingletonB.getInstance();
+        SingletonB instance3 = SingletonB.getInstance();
         if (instance2 == instance3) {
             System.out.println("success");
         }
 
-        SinglotonC instance4 = SinglotonC.getInstance();
-        SinglotonC instance5 = SinglotonC.getInstance();
+        SingletonC instance4 = SingletonC.getInstance();
+        SingletonC instance5 = SingletonC.getInstance();
         if (instance4 == instance5) {
             System.out.println("success");
         }
+
+    }
+
+    public static void test(Class clazz) {
 
     }
 

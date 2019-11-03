@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @Author: zhouwei
- * @Description:
+ * @Description: 死锁检测
  * @Date: 2019/8/29 12:19
  * @Version: 1.0
  **/

@@ -1,8 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35b8dc19-ee4c-4030-b6a3-f0bc48413315" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="55c905ba-7081-436e-9896-e8374cefa719" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_io_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/actual/vipCost/NormalPayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/actual/vipCost/ParticularlyVipPayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/actual/vipCost/SuperVipPayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/actual/vipCost/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/actual/vipCost/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/actual/vipCost/UserPayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/actual/vipCost/UserPayServiceStrategyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/actual/vipCost/VipPayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/algorithm/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myHome/algorithm/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/Practice/MyThreadPool1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/aaa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/copy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/0-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/1-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/10-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/11-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/12-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/13-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/14-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/15-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/16-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/17-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/18-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/19-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/2-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/20-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/3-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/4-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/5-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/6-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/7-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/8-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/dest/9-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/new.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/io/file/src.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/socket/udp/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/java/socket/udp/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/javabasiciodest0-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/Test$ProxyInvocationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/Test$Subject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/Test$SubjectImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/adapterPattern/AdvancedMediaPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/adapterPattern/AudioPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/adapterPattern/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/adapterPattern/MediaAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/adapterPattern/MediaPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/adapterPattern/Mp4Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/adapterPattern/VlcPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/decoratorPattern/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/decoratorPattern/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/decoratorPattern/RedShapeDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/decoratorPattern/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/decoratorPattern/ShapeDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/observerPattern/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/observerPattern/display/CurrentConditionsDisplay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/observerPattern/display/DisplayElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/observerPattern/display/ForecastDisplay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/observerPattern/display/Observer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/observerPattern/display/StatisticsDisplay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/observerPattern/subject/Subject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/observerPattern/subject/WeatherData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/proxyPattern/Image.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/proxyPattern/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/proxyPattern/ProxyImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/proxyPattern/RealImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/singleton/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myHome/pattern/singleton/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/singleton/SinglotonA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/singleton/SinglotonB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/singleton/SinglotonC$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/singleton/SinglotonC$Lazyload.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myHome/pattern/singleton/SinglotonC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javaBasic/DeadThreadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javaBasic/DeadThreadTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/adapter/AdvancedMediaPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/adapter/AdvancedMediaPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/adapter/MediaPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/adapter/MediaPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/singleton/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/singleton/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/singleton/SinglotonA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/singleton/SingletonA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/singleton/SinglotonB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/singleton/SingletonB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pattern/singleton/SinglotonC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pattern/singleton/SingletonC.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +119,14 @@
     <expand />
     <select />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
@@ -36,10 +136,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -53,17 +160,97 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Application.Test (1)">
+    <configuration name="DeamonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaBasic.thread.DeamonTest" />
+      <module name="myHome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaBasic.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParticularlyVipPayService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pattern.actual.vipCost.ParticularlyVipPayService" />
+      <module name="myHome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pattern.actual.vipCost.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Student" />
+      <module name="myHome" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pattern.actual.vipCost.Test" />
+      <module name="myHome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pattern.actual.vipCost.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaBasic.thread.Test01" />
+      <module name="myHome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaBasic.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.ParticularlyVipPayService" />
+        <item itemvalue="Application.DeamonTest" />
+        <item itemvalue="Application.Test01" />
+        <item itemvalue="Application.Student" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="115a56a3-d774-4dcb-859e-f77bd1c6b5c0" name="Default Changelist" comment="" />
+      <changelist id="55c905ba-7081-436e-9896-e8374cefa719" name="Default Changelist" comment="" />
       <created>1569075980410</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569075980410</updated>
       <workItem from="1569075991554" duration="7063000" />
+      <workItem from="1569251225975" duration="1688000" />
+      <workItem from="1569424696241" duration="33000" />
+      <workItem from="1569575222500" duration="4413000" />
+      <workItem from="1570934883463" duration="786000" />
+      <workItem from="1570955452082" duration="10800000" />
+      <workItem from="1571975255979" duration="15987000" />
+      <workItem from="1572507983255" duration="597000" />
+      <workItem from="1572518857504" duration="2012000" />
+      <workItem from="1572599300777" duration="626000" />
+      <workItem from="1572787697002" duration="5806000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1569079635918</created>
@@ -109,6 +296,23 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="range">
+                    <value>
+                      <list>
+                        <option value="HEAD..master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -117,6 +321,11 @@
           </value>
         </entry>
       </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
     </option>
   </component>
   <component name="VcsManagerConfiguration">

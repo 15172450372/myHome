@@ -1,7 +1,7 @@
 package pattern.adapter;
 
 /**
- * @Descript:
+ * @Descript: 媒体播放器
  * @Author: zhouwei
  * @Date: 19-6-17 下午5:26
  * @Version 1.0
