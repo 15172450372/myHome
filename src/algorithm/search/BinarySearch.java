@@ -29,7 +29,7 @@ public class BinarySearch {
         int low = 0;
         int high = arr.length - 1;
         while (low <= high) {
-            int middle = (low+high)/2;
+            int middle = low + (high - low) / 2;
             if (arr[middle].compareTo(target) == 0) {
                 return middle;
             } else if (arr[middle].compareTo(target) < 0) {
