@@ -1,6 +1,8 @@
 package javaBasic.socket.tcp.chat01;
 
-import java.io.*;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -17,13 +19,13 @@ public class SingleChatServer {
         System.out.println("------Server------");
 
         ServerSocket server = new ServerSocket(8888);
-        Socket socket = server.accept();
+        Socket socket = server.accept();  //阻塞
 
         DataInputStream dis = new DataInputStream(socket.getInputStream());
         DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
         while (true) {
             //接收消息
-            String msg = dis.readUTF();
+            String msg = dis.readUTF();  //阻塞
             //返回消息
             dos.writeUTF(msg);
 
